@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Survey Page</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+        }
+
+        .header{
+            background-color:orange;
+            color:#333;
+            text-align:center;
+            padding:20px;
+        }
+
+        .navbar{
+            background:#333;
+            text-align:center;
+        }
+
+        .navbar a{
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            display:inline-block;
+        }
+
+        .navbar a:hover{
+            background:orange;
+            color:black;
+        }
+
+        .container{
+            width:80%;
+            margin:20px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:orange;
+            margin-bottom:15px;
+        }
+
+        .survey-section{
+            margin-bottom:25px;
+            padding-bottom:15px;
+            border-bottom:1px solid #ddd;
+        }
+
+        label{
+            display:block;
+            margin-top:10px;
+            font-weight:bold;
+        }
+
+        select, textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        .submit-btn{
+            background:orange;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .submit-btn:hover{
+            background:#e68900;
+        }
+
+        .footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+         .header-content{
+            display:flex;
+            align-items:center;
+            background-color:orange;
+            padding:10px 20px;
+        }
+
+        .header-content img{
+            margin-right:20px;
+        }
+        .header-content h1{
+            flex:1;
+            text-align:center;
+            color:#333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                 alt="Logo"
+                 width="60">
+
+            <h1>Society Survey & Polling System</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="polls.html">View Polls</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="results.html">Results</a>
+         <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Society Feedback Survey</h2>
+
+        <form>
+
+            <div class="survey-section">
+                <label>1. Cleanliness Satisfaction</label>
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="survey-section">
+                <label>2. Security Service Feedback</label>
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="survey-section">
+                <label>3. Parking Issues</label>
+                <select>
+                    <option>No Issues</option>
+                    <option>Minor Issues</option>
+                    <option>Moderate Issues</option>
+                    <option>Major Issues</option>
+                </select>
+            </div>
+
+            <div class="survey-section">
+                <label>4. Water Supply Feedback</label>
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="survey-section">
+                <label>5. Maintenance Quality</label>
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="survey-section">
+                <label>6. Suggestions Box</label>
+                <textarea rows="5" placeholder="Enter your valuable suggestions here..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Submit Survey
+            </button>
+
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 Society Survey & Polling System. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

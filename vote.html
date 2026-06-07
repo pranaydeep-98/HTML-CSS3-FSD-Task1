@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Now - Society Survey & Polling System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        /* SAME HEADER AS DASHBOARD */
+        .header-content{
+            display:flex;
+            align-items:center;
+            background-color:orange;
+            padding:10px 20px;
+        }
+
+        .header-content img{
+            margin-right:20px;
+        }
+
+        .header-content h1{
+            flex:1;
+            text-align:center;
+            color:#333;
+        }
+
+        .navbar{
+            background:#333;
+            text-align:center;
+        }
+
+        .navbar a{
+            display:inline-block;
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            font-weight:bold;
+        }
+
+        .navbar a:hover{
+            background:orange;
+            color:black;
+        }
+
+        /* PAGE CONTENT */
+
+        .container{
+            width:90%;
+            margin:30px auto;
+        }
+
+        .page-title{
+            text-align:center;
+            color:#ff9800;
+            margin-bottom:25px;
+        }
+
+        .poll-title{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            margin-bottom:25px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .poll-title h2{
+            color:#333;
+        }
+
+        .candidate-container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .candidate-card{
+            background:white;
+            flex:1;
+            min-width:280px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .candidate-card h3{
+            color:orange;
+            margin-bottom:10px;
+        }
+
+        .candidate-card p{
+            margin-bottom:8px;
+            line-height:1.5;
+        }
+
+        .candidate-card label{
+            font-weight:bold;
+            color:#333;
+        }
+
+        .submit-section{
+            text-align:center;
+            margin-top:30px;
+        }
+
+        .submit-btn{
+            background:orange;
+            color:white;
+            border:none;
+            padding:12px 25px;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        .submit-btn:hover{
+            background:#e68900;
+        }
+
+        .footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                 alt="Logo"
+                 width="60">
+
+            <h1>Society Survey & Polling System</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="polls.html">View Polls</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="results.html">Results</a>
+         <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="page-title">Cast Your Vote</h1>
+
+        <div class="poll-title">
+            <h2>Poll Name 2026</h2>
+            <p>Select one candidate for Society President.</p>
+        </div>
+
+        <form>
+
+            <div class="candidate-container">
+
+                <!-- Candidate 1 -->
+                <div class="candidate-card">
+                    <h3>Rahul Sharma</h3>
+
+                    <p><strong>Flat No:</strong> A-101</p>
+
+                    <p><strong>Position:</strong> President</p>
+
+                    <p>
+                        <strong>Manifesto:</strong><br>
+                        Improve society maintenance,
+                        increase security measures,
+                        and organize more community events.
+                    </p>
+
+                    <label>
+                        <input type="radio"
+                               name="candidate"
+                               value="Rahul Sharma"
+                               required>
+                        Select Candidate
+                    </label>
+                </div>
+
+                <!-- Candidate 2 -->
+                <div class="candidate-card">
+                    <h3>Priya Reddy</h3>
+
+                    <p><strong>Flat No:</strong> B-204</p>
+
+                    <p><strong>Position:</strong> President</p>
+
+                    <p>
+                        <strong>Manifesto:</strong><br>
+                        Better parking management,
+                        transparent budgeting,
+                        and faster complaint resolution.
+                    </p>
+
+                    <label>
+                        <input type="radio"
+                               name="candidate"
+                               value="Priya Reddy">
+                        Select Candidate
+                    </label>
+                </div>
+
+                <!-- Candidate 3 -->
+                <div class="candidate-card">
+                    <h3>Arjun Kumar</h3>
+
+                    <p><strong>Flat No:</strong> C-305</p>
+
+                    <p><strong>Position:</strong> President</p>
+
+                    <p>
+                        <strong>Manifesto:</strong><br>
+                        Smart security systems,
+                        improved water supply,
+                        and regular resident meetings.
+                    </p>
+
+                    <label>
+                        <input type="radio"
+                               name="candidate"
+                               value="Arjun Kumar">
+                        Select Candidate
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="submit-section">
+                <button type="submit"
+                        class="submit-btn"
+                        onclick="alert('Vote Submitted Successfully!')">
+                    Submit Vote
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 Society Survey & Polling System. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

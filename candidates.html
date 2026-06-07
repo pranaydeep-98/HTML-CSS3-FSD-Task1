@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidates - Society Survey & Polling System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .header-content{
+            display:flex;
+            align-items:center;
+            background-color:orange;
+            padding:10px 20px;
+        }
+
+        .header-content img{
+            margin-right:20px;
+        }
+
+        .header-content h1{
+            flex:1;
+            text-align:center;
+            color:#333;
+        }
+
+        .navbar{
+            background:#333;
+            text-align:center;
+        }
+
+        .navbar a{
+            display:inline-block;
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            font-weight:bold;
+        }
+
+        .navbar a:hover{
+            background:orange;
+            color:black;
+        }
+
+        .container{
+            width:90%;
+            margin:30px auto;
+        }
+
+        .page-title{
+            text-align:center;
+            color:orange;
+            margin-bottom:30px;
+        }
+
+        .candidate-container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .candidate-card{
+            background:white;
+            flex:1;
+            min-width:300px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .candidate-card:hover{
+            transform:translateY(-5px);
+            transition:0.3s;
+        }
+
+        .candidate-card img{
+            display:block;
+            margin:auto;
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            margin-bottom:15px;
+        }
+
+        .candidate-card h2{
+            text-align:center;
+            color:orange;
+            margin-bottom:15px;
+        }
+
+        .candidate-card p{
+            margin-bottom:10px;
+            line-height:1.5;
+        }
+
+        .footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                 alt="Logo"
+                 width="60">
+
+            <h1>Society Survey & Polling System</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="polls.html">View Polls</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="results.html">Results</a>
+         <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="page-title">Election Candidates</h1>
+
+        <div class="candidate-container">
+
+            <div class="candidate-card">
+                <img src="https://via.placeholder.com/120" alt="Candidate">
+
+                <h2>Rahul Sharma</h2>
+
+                <p><strong>Position:</strong> President</p>
+
+                <p><strong>Experience:</strong> 5 Years in Society Management</p>
+
+                <p>
+                    <strong>Manifesto:</strong>
+                    Improve maintenance services, strengthen security,
+                    and increase resident engagement activities.
+                </p>
+
+                <p>
+                    <strong>Society Contribution:</strong>
+                    Organized cleanliness drives and community festivals.
+                </p>
+
+                <p>
+                    <strong>Contact:</strong>
+                    rahul.sharma@email.com
+                </p>
+            </div>
+
+            <div class="candidate-card">
+                <img src="https://via.placeholder.com/120" alt="Candidate">
+
+                <h2>Priya Reddy</h2>
+
+                <p><strong>Position:</strong> Secretary</p>
+
+                <p><strong>Experience:</strong> 4 Years in Resident Welfare Activities</p>
+
+                <p>
+                    <strong>Manifesto:</strong>
+                    Transparent communication and faster complaint resolution.
+                </p>
+
+                <p>
+                    <strong>Society Contribution:</strong>
+                    Led parking management improvement initiatives.
+                </p>
+
+                <p>
+                    <strong>Contact:</strong>
+                    priya.reddy@email.com
+                </p>
+            </div>
+
+            <div class="candidate-card">
+                <img src="https://via.placeholder.com/120" alt="Candidate">
+
+                <h2>Arjun Kumar</h2>
+
+                <p><strong>Position:</strong> Treasurer</p>
+
+                <p><strong>Experience:</strong> 6 Years Financial Management</p>
+
+                <p>
+                    <strong>Manifesto:</strong>
+                    Better budget planning and transparent fund utilization.
+                </p>
+
+                <p>
+                    <strong>Society Contribution:</strong>
+                    Managed annual society financial reports.
+                </p>
+
+                <p>
+                    <strong>Contact:</strong>
+                    arjun.kumar@email.com
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 Society Survey & Polling System. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Society Survey & Polling System</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+        }
+
+        .header-content{
+            display:flex;
+            align-items:center;
+            background-color:orange;
+            padding:10px 20px;
+        }
+
+        .header-content img{
+            margin-right:20px;
+        }
+        .header-content h1{
+            flex:1;
+            text-align:center;
+            color:#333;
+        }
+        .navbar{
+            background:#333;
+            text-align:center;
+        }
+
+        .navbar a{
+            display:inline-block;
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            font-weight:bold;
+        }
+
+        .navbar a:hover{
+            background:orange;
+            color:black;
+        }
+        .container{
+            padding:25px;
+        }
+        .welcome-box{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom:25px;
+        }
+
+        .welcome-box h2{
+            color:#ff9800;
+            margin-bottom:10px;
+        }
+
+        /* Section Headings */
+        .section-title{
+            color:#333;
+            border-left:5px solid orange;
+            padding-left:10px;
+            margin:20px 0;
+        }
+
+        /* Cards */
+        .card-container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            flex:1;
+            min-width:220px;
+            padding:20px;
+            text-align:center;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card h3{
+            color:orange;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            margin-bottom:15px;
+        }
+
+        .card button{
+            background:orange;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .card button:hover{
+            background:#e68900;
+        }
+        .content-box{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom:20px;
+        }
+
+        .content-box li{
+            margin-bottom:10px;
+        }
+
+        /* Footer */
+        .footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                 alt="Logo"
+                 width="60">
+
+            <h1>Society Survey & Polling System</h1>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="polls.html">View Polls</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="results.html">Results</a>
+         <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </nav>
+    <div class="container">
+        <div class="welcome-box">
+            <h2>Welcome, Resident!</h2>
+            <p>
+                Welcome to the Society Survey & Polling System Dashboard.
+                Stay updated with surveys, polls, elections and community activities.
+            </p>
+        </div>
+        <h2 class="section-title">Quick Access</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>📊 Active Surveys</h3>
+                <p>3 surveys available for participation.</p>
+                <button onclick="location.href='surveys.html'">
+                    Open Surveys
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>🗳 Active Polls</h3>
+                <p>2 polls are currently open.</p>
+                <button onclick="location.href='polls.html'">
+                    View Polls
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>👥 Candidates</h3>
+                <p>View election candidates.</p>
+                <button onclick="location.href='candidates.html'">
+                    View Candidates
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>📈 Results</h3>
+                <p>Published election results.</p>
+                <button onclick="location.href='results.html'">
+                    View Results
+                </button>
+            </div>
+
+        </div>
+        <h2 class="section-title">Recent Announcements</h2>
+
+        <div class="content-box">
+            <ul>
+                <li>Society Representative Election starts on July 10.</li>
+                <li>Candidate nominations close on July 5.</li>
+                <li>New community survey has been published.</li>
+            </ul>
+        </div>
+        <h2 class="section-title">Election Timeline</h2>
+
+        <div class="content-box">
+            <ol>
+                <li>Nomination Period: July 1 – July 5</li>
+                <li>Candidate Verification: July 6 – July 7</li>
+                <li>Campaign Period: July 8 – July 9</li>
+                <li>Voting Day: July 10</li>
+                <li>Result Declaration: July 11</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2026 Society Survey & Polling System. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

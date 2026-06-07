@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Society Survey & Polling System</title>
+
+    <style>
+                .header-content {
+            display: flex;
+            background-color: orange;
+            color: black;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            
+        }   
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:350px;
+            margin:80px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align:center;
+            color:#ff9800;
+            margin-bottom:25px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input[type="text"],
+        input[type="password"]{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        input:focus{
+            outline:none;
+            border-color:#ff9800;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#ff9800;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#e68900;
+        }
+
+        .links{
+            text-align:center;
+            margin-top:15px;
+        }
+
+        .links a{
+            text-decoration:none;
+            color:#ff9800;
+            font-weight:bold;
+        }
+
+        .links a:hover{
+            text-decoration:underline;
+        }
+    </style>
+       <header>
+        <div class="header-content">
+            <img src="data:image/png;base64,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" alt="Society Logo" width="80">
+            <h1 style="color: rgb(21, 19, 14); padding-left: 60px;">Society Survey & Polling System</h1>
+        </div>     
+    </header>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Login</h1>
+
+        <form action="dashboard.html" method="post">
+
+            <label for="user">Email or Mobile Number</label>
+            <input type="text" id="user" name="user" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <div class="links">
+            <p>
+                <a href="forgotpassword.html">Forgot Password?</a>
+            </p>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
